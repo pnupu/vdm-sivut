@@ -1,4 +1,5 @@
 import React from 'react'
+import Meme from './Meme'
 
 const Frontpage = (props) => {
     if (!props.show) {
@@ -6,7 +7,8 @@ const Frontpage = (props) => {
     }
     return (
         <div>
-            Etusivu
+            <h2>Etusivu</h2>
+            <Meme />
         </div>
     )
 }

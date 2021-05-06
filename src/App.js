@@ -1,13 +1,13 @@
 import React,  { useState } from 'react'
 import About from './components/About'
 import Frontpage from './components/Frontpage'
-import Meme from './components/Meme'
 import Stories from './components/Stories'
+import './App.css'
 
 function App() {
   const [page, setPage] = useState('Frontpage')
   return (
-   <div>
+   <div className="container">
      <div>
         <button onClick={() => setPage('Frontpage')}>Frontpage</button>
         <button onClick={() => setPage('Stories')}>Stories</button>
