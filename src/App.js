@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React,  { useState } from 'react'
+import About from './components/About'
+import Frontpage from './components/Frontpage'
+import Meme from './components/Meme'
+import Stories from './components/Stories'
 
 function App() {
+  const [page, setPage] = useState('Frontpage')
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div>
+     <div>
+        <button onClick={() => setPage('Frontpage')}>Frontpage</button>
+        <button onClick={() => setPage('Stories')}>Stories</button>
+        <button onClick={() => setPage('About')}>About</button>
+      </div>
+     <h1>
+     Antti on näätä
+     </h1>
+    <Frontpage 
+      show={page === 'Frontpage'}
+      />
+    <About 
+      show={page === 'About'}
+      />
+    <Stories 
+      show={page === 'Stories'}
+    />
+   </div>
   );
 }
 
