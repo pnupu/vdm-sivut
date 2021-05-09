@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import {Modal, Button, Container, Row, Col} from 'react-bootstrap'
 
 const MemeModal = (props) => {
+    console.log(props.info)
     return(
         <Modal
         {...props}
@@ -15,11 +16,11 @@ const MemeModal = (props) => {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h4>Koko kansan Paavo</h4>
+        <h4>{props.info.title}</h4>
         <Container>
             <Row>
                 <Col>
-                    <img src="https://pbs.twimg.com/profile_images/949193787317899264/6-w9wS-4_400x400.jpg" alt="Koko kansan Paavo" className="img-fluid"/>
+                    <img src={props.info.thumbnail.default} alt="Koko kansan Paavo" className="img-fluid"/>
                 </Col>
                 <Col>
                     <p>
@@ -36,13 +37,17 @@ const MemeModal = (props) => {
     )
 }
 
-const Meme = () => {
+const Meme = (meme) => {
     const [modalShow, setModalShow] = useState(false)
+    console.log(meme)
+    console.log(meme.meme)
+    console.log(meme.meme.thumbnail)
     return (
         <div >
-            <img src="https://pbs.twimg.com/profile_images/949193787317899264/6-w9wS-4_400x400.jpg" alt="Koko kansan Paavo" onClick={() => setModalShow(true)}/>
+            <img src={meme.meme.thumbnail.default} alt="Koko kansan Paavo" onClick={() => setModalShow(true)}/>
             <MemeModal
         show={modalShow}
+        info={meme.meme}
         onHide={() => setModalShow(false)}
       />
         </div>

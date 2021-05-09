@@ -1,0 +1,13 @@
+[0m2021.05.07 10:57:30 INFO  Started: Metals version 0.10.2 in workspace 'C:\Users\ilkka.000\vdm-nettisivu' for client vscode 1.55.2.[0m
+[0m2021.05.07 10:57:35 INFO  time: initialize in 4.58s[0m
+[0m2021.05.07 10:57:37 WARN  Build server is not auto-connectable.[0m
+[0m2021.05.07 10:57:37 WARN  no build tool detected in workspace 'C:\Users\ilkka.000\vdm-nettisivu'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.05.08 16:17:04 INFO  Started: Metals version 0.10.2 in workspace 'C:\Users\ilkka.000\vdm-nettisivu' for client vscode 1.55.2.[0m
+[0m2021.05.08 16:17:09 INFO  time: initialize in 5.27s[0m
+[0m2021.05.08 16:17:17 WARN  Build server is not auto-connectable.[0m
+[0m2021.05.08 16:17:17 WARN  no build tool detected in workspace 'C:\Users\ilkka.000\vdm-nettisivu'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.05.09 12:29:57 INFO  Started: Metals version 0.10.2 in workspace 'C:\Users\ilkka.000\vdm-nettisivu' for client vscode 1.55.2.[0m
+[0m2021.05.09 12:30:03 INFO  time: initialize in 6.62s[0m
+[0m2021.05.09 12:30:09 WARN  Build server is not auto-connectable.[0m
+[0m2021.05.09 12:30:09 WARN  no build tool detected in workspace 'C:\Users\ilkka.000\vdm-nettisivu'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.05.09 12:33:04 INFO  shutting down Metals[0m

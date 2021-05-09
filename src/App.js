@@ -2,7 +2,9 @@ import React,  { useState } from 'react'
 import About from './components/About'
 import Frontpage from './components/Frontpage'
 import Stories from './components/Stories'
+import {Switch, Route, Link, useRouteMatch, useLocation} from 'react-router-dom'
 import './App.css'
+import { slide as Menu } from 'react-burger-menu'
 
 function App() {
   const [page, setPage] = useState('Frontpage')

@@ -1,0 +1,14 @@
+{
+    "memes":[
+        {
+            "id": 1,
+            "Otsikko": "Meemi 1",
+            "thumbnail": "../Meemit/Frame1.png"
+        },
+        {
+            "id": 2,
+            "Otsikko": "Meemi 2",
+            "thumbnail": "../Meemit/Frame2.png"
+        }
+    ]
+}
