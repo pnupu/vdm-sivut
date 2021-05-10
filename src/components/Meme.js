@@ -3,6 +3,7 @@ import {Modal, Button, Container, Row, Col} from 'react-bootstrap'
 
 const MemeModal = (props) => {
     console.log(props.info)
+    const url = `/articles/#${props.info.id}`
     return(
         <Modal
         {...props}
@@ -28,7 +29,7 @@ const MemeModal = (props) => {
                         Hän on toiminut kansanedustajana viidellä eri vuosikymmenellä ja on ollut useita kertoja ministerinä. Väyrynen on Suomen Keskustan jäsen.
                         Aiemmin hän on edustanut myös Kansalaispuoluetta sekä Seitsemän tähden liikettä.
                     </p>
-                    <Button onClick={() => console.log("tämä vie artikkeliin")}> Lue Lisää</Button>
+                    <Button href={url}> Lue Lisää</Button>
                 </Col>
             </Row>
         </Container>

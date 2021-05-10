@@ -6,8 +6,20 @@ import Articles from './components/Articles'
 import {Switch, Route, Link, useRouteMatch, useLocation} from 'react-router-dom'
 import './App.css'
 import { slide as Menu } from 'react-burger-menu'
+import { memes } from './Meemit/memes'
 
 const App = () => {
+  const footer  = `Ilkka Lappeteläinen ${new Date().getFullYear()}`
+
+  const Header = () => {
+    return (
+      <div class="background-image">
+        <div class="background-text">
+          <h1 class="text-center">Kampanjan nimi</h1>
+        </div>
+      </div>
+    )
+  }
 
   const Burger = () => {
     return (
@@ -20,19 +32,17 @@ const App = () => {
     )
   }
   return (
-    <div>
+  <div className="page">
 
-      <Burger/>
+  <Burger/>
+      <Header/>
    <div className="container">
-     <h1>
-     Antti on näätä
-     </h1>
       <Switch>
         <Route path="/stories">
          <Stories/>
         </Route>
         <Route path="/Articles">
-         <Articles />
+         <Articles memes={memes}/>
         </Route>
         <Route path="/about">
           <About/>
@@ -41,6 +51,9 @@ const App = () => {
           <Frontpage />
         </Route>
       </Switch>
+      <footer>
+        <p>{footer}</p>
+      </footer>
    </div>
   </div>
   );

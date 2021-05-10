@@ -51,7 +51,7 @@ export const memes = [
         {
             id: 8,
             title: "Meemi 8",
-            thumbnail: require("../Meemit/Frame9.png"),
+            thumbnail: require("../Meemit/Frame8.png"),
             smalltext: "",
             bigtext: ""
         },

@@ -8,12 +8,13 @@ const Frontpage = (props) => {
     memes.map(meme => console.log(meme))
 
     return (
-        <div>
-            <h2>Etusivu</h2>
+        <div className="Frontpage">
             <Container>
-            <Row>
+            <div className="Row">
+            <Row > 
             {memes.map(meme =><Col> <Meme key={meme.id} meme={meme}/></Col>)}
             </Row>
+            </div>
             </Container>
 
         </div>

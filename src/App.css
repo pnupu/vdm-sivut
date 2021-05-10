@@ -1,45 +1,44 @@
-.App {
+body {
+  background-image: url('./assets/double-bubble.png');
+  
+}
+
+.Frontpage{
+  position: relative;
+  padding-top: 10vh;
+}
+
+.background-text{
   text-align: center;
+  position: relative;
+  top: 50%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+footer > p {
+  padding-bottom: 20px;
+}
+
+.col {
+  padding-bottom: 60px;
+  align-items: auto;
+}
+
+.Frontpage > img:hover{
+  cursor: pointer;
 }
 
 img {
+  outline: 2px solid black;
   width: 300px;
   height: 300px;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 /* Position and sizing of burger button */
@@ -107,4 +106,5 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
+
 }
