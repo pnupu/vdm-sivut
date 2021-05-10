@@ -6,9 +6,7 @@ import {Container, Row, Col} from 'react-bootstrap'
 const Frontpage = (props) => {
     console.log(memes)
     memes.map(meme => console.log(meme))
-    if (!props.show) {
-        return null
-    }
+
     return (
         <div>
             <h2>Etusivu</h2>

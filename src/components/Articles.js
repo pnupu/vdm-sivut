@@ -1,13 +1,12 @@
 import React from 'react'
 
-const About = (props) => {
+const Articles = (props) => {
 
-    
     return (
         <div>
-            About sivu
+            Articles
         </div>
     )
 }
 
-export default About
+export default Articles
