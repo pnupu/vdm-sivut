@@ -41,7 +41,7 @@ const Meme = (meme) => {
     const [modalShow, setModalShow] = useState(false)
 
     return (
-        <div >
+        <div className="meme">
             <img src={meme.meme.thumbnail.default} alt="Koko kansan Paavo" onClick={() => setModalShow(true)}/>
             <MemeModal
         show={modalShow}

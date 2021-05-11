@@ -8,6 +8,11 @@ body {
   padding-top: 30vh;
   align-items: center;
 }
+.Articles{
+  position: relative;
+  padding-top: 30vh;
+  align-items: center;
+}
 
 .button {
   margin-top: 30px;
@@ -16,8 +21,7 @@ body {
 .background-text{
   text-align: center;
   position: relative;
-
-  margin-bottom: 30vh;
+  padding-bottom: 30vh;
   top: 30vh;
 }
 
@@ -48,10 +52,13 @@ footer p {
   margin-bottom: 0;
   padding: 30px 0;
 }
-
+.meme {
+  width: 300px;
+  padding: 0;
+}
 .col {
   padding-bottom: 60px;
-  align-items: auto;
+  align-items: center;
 }
 
 .Frontpage img:hover{
@@ -60,15 +67,17 @@ footer p {
 
 .article{
   background-color: whitesmoke;
+  position: static;
   margin-top: 30px;
+  margin-bottom: 30px;
   padding: 20px;
   font-size: 20px;
 }
 
 img {
   outline: 2px solid black;
-  width: 300px;
-  height: 300px;
+  width: 351px;
+  height: 351px;
 }
 
 /* Position and sizing of burger button */

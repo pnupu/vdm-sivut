@@ -4,6 +4,7 @@ const Articles = (props) => {
 
     return (
         <div className="container" >
+        <div className="Articles" >
             <div className="article" id="1">
             <h2>Rokote: miksi, miten ja milloin?</h2>
             <br />
@@ -144,6 +145,7 @@ const Articles = (props) => {
             Lue lisää 
             </a>
             </div>
+        </div>
         </div>
     )
 }

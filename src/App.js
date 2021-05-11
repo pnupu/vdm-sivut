@@ -14,7 +14,6 @@ const App = () => {
 
   const Header = () => {
     return (
-      <div className="background-image">
         <div className="background-text">
           <h1>Piikitä!</h1>
           <h3>
@@ -23,7 +22,6 @@ const App = () => {
           <Button href="/Memeform" className="button">
                 Osallistu kilpailuun!
             </Button>
-        </div>
       </div>
     )
   }
