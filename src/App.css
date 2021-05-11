@@ -35,6 +35,13 @@ footer > p {
   cursor: pointer;
 }
 
+.article{
+  background-color: whitesmoke;
+  margin-top: 30px;
+  padding: 20px;
+  font-size: 20px;
+}
+
 img {
   outline: 2px solid black;
   width: 300px;

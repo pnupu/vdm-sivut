@@ -9,7 +9,7 @@ import { slide as Menu } from 'react-burger-menu'
 import { memes } from './Meemit/memes'
 
 const App = () => {
-  const footer  = `Ilkka Lappeteläinen ${new Date().getFullYear()}`
+  const footer  = `Ryhmä 12 ${new Date().getFullYear()}`
 
   const Header = () => {
     return (
