@@ -8,6 +8,19 @@ body {
   padding-top: 30vh;
   align-items: center;
 }
+
+.about{
+  padding-top: 30vh;
+  text-align: center;
+  min-height: 80vh;
+}
+
+.stories{
+  padding-top: 30vh;
+  text-align: center;
+  min-height: 80vh;
+}
+
 .Articles{
   position: relative;
   padding-top: 30vh;

@@ -4,8 +4,8 @@ const About = (props) => {
 
     
     return (
-        <div>
-            About sivu
+        <div className="about">
+            Täällä sivulla kerrotaan mikä homma on kyseessä. Ja ehkä jotain Urho Kaleva Kekkosia.
         </div>
     )
 }
