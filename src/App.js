@@ -6,8 +6,8 @@ import Articles from './components/Articles'
 import {Switch, Route } from 'react-router-dom'
 import './App.css'
 import { slide as Menu } from 'react-burger-menu'
-import { memes } from './Meemit/memes'
 import Memeform from './components/Memeform'
+import {Button} from 'react-bootstrap'
 
 const App = () => {
   const footer  = `Ryhmä 12 @${new Date().getFullYear()}`
@@ -18,8 +18,11 @@ const App = () => {
         <div className="background-text">
           <h1>Piikitä!</h1>
           <h3>
-            Tässä on hieno tekstiä kampanjasta...
+            Tässä on hienoa tekstiä kampanjasta...
           </h3>
+          <Button href="/Memeform" className="button">
+                Osallistu kilpailuun!
+            </Button>
         </div>
       </div>
     )
@@ -47,7 +50,7 @@ const App = () => {
          <Stories/>
         </Route>
         <Route path="/Articles">
-         <Articles memes={memes}/>
+         <Articles/>
         </Route>
         <Route path="/About">
           <About/>

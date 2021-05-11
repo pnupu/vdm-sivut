@@ -6,6 +6,11 @@ body {
 .Frontpage{
   position: relative;
   padding-top: 30vh;
+  align-items: center;
+}
+
+.button {
+  margin-top: 30px;
 }
 
 .background-text{
