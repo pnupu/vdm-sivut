@@ -7,15 +7,19 @@ import {Switch, Route } from 'react-router-dom'
 import './App.css'
 import { slide as Menu } from 'react-burger-menu'
 import { memes } from './Meemit/memes'
+import Memeform from './components/Memeform'
 
 const App = () => {
-  const footer  = `Ryhmä 12 ${new Date().getFullYear()}`
+  const footer  = `Ryhmä 12 @${new Date().getFullYear()}`
 
   const Header = () => {
     return (
-      <div class="background-image">
-        <div class="background-text">
-          <h1 class="text-center">Kampanjan nimi</h1>
+      <div className="background-image">
+        <div className="background-text">
+          <h1>Piikitä!</h1>
+          <h3>
+            Tässä on hieno tekstiä kampanjasta...
+          </h3>
         </div>
       </div>
     )
@@ -24,9 +28,10 @@ const App = () => {
   const Burger = () => {
     return (
       <Menu>
-        <a id="Frontpage" className="menu-item" href="/">Home</a>
-        <a id="Articles" className="menu-item" href="/Articles">Articles</a>
-        <a id="Stories" className="menu-item" href="/Stories">Stories</a>
+        <a id="Frontpage" className="menu-item" href="/">Etusivu</a>
+        <a id="Articles" className="menu-item" href="/Articles">Artikkelit</a>
+        <a id="Stories" className="menu-item" href="/Stories">Tarinat</a>
+        <a id="Memeform" className="menu-item" href="/Memeform">Osallistu</a>
         <a id="About" className="menu-item" href="/About">About</a>
       </Menu>
     )
@@ -38,23 +43,26 @@ const App = () => {
       <Header/>
    <div className="container">
       <Switch>
-        <Route path="/stories">
+        <Route path="/Stories">
          <Stories/>
         </Route>
         <Route path="/Articles">
          <Articles memes={memes}/>
         </Route>
-        <Route path="/about">
+        <Route path="/About">
           <About/>
+        </Route>
+        <Route path="/Memeform">
+          <Memeform />
         </Route>
         <Route path="/">
           <Frontpage />
         </Route>
       </Switch>
-      <footer>
+   </div>
+      <footer className="footer">
         <p>{footer}</p>
       </footer>
-   </div>
   </div>
   );
 }

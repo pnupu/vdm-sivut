@@ -4,15 +4,14 @@ import {memes} from '../Meemit/memes.js'
 import {Container, Row, Col} from 'react-bootstrap'
 
 const Frontpage = (props) => {
-    console.log(memes)
-    memes.map(meme => console.log(meme))
+
 
     return (
         <div className="Frontpage">
             <Container>
             <div className="Row">
             <Row > 
-            {memes.map(meme =><Col> <Meme key={meme.id} meme={meme}/></Col>)}
+            {memes.map(meme =><Col key={meme.id}> <Meme key={meme.id} meme={meme}/></Col>)}
             </Row>
             </div>
             </Container>

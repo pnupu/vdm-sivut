@@ -1,8 +1,7 @@
 import React from 'react'
 
 const Articles = (props) => {
-    const memes = props.memes
-    console.log(memes)
+
     return (
         <div className="container" >
             <div className="article" id="1">

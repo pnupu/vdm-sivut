@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import {Modal, Button, Container, Row, Col} from 'react-bootstrap'
 
 const MemeModal = (props) => {
-    console.log(props.info)
     const url = `/articles/#${props.info.id}`
     return(
         <Modal
@@ -40,9 +39,7 @@ const MemeModal = (props) => {
 
 const Meme = (meme) => {
     const [modalShow, setModalShow] = useState(false)
-    console.log(meme)
-    console.log(meme.meme)
-    console.log(meme.meme.thumbnail)
+
     return (
         <div >
             <img src={meme.meme.thumbnail.default} alt="Koko kansan Paavo" onClick={() => setModalShow(true)}/>
