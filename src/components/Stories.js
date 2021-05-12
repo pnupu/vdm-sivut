@@ -2,7 +2,7 @@ import React from 'react'
 import matti from '../assets/matti.jpg'
 import liisi from '../assets/liisi.jpg'
 import tomi from '../assets/tomi.jpg'
-import {Container, Row, Col} from 'react-bootstrap'
+import {Container, Row, Col, Image} from 'react-bootstrap'
 
 const Stories = (props) => {
 
@@ -13,7 +13,7 @@ const Stories = (props) => {
             <h2>Matti</h2>
             <Row>
             <Col>
-                <img src={matti} alt="matti"/>
+                <Image src={matti} alt="matti" roundedCircle />
             </Col>
             <Col>
                 <p>
@@ -26,7 +26,7 @@ const Stories = (props) => {
             <h2>Liisi</h2>
             <Row>
             <Col>
-            <img src={liisi} alt={liisi}/>
+                <Image src={liisi} alt={liisi} roundedCircle/>
             </Col>
             <Col>
             <p>
@@ -39,7 +39,7 @@ const Stories = (props) => {
             <h2>Tomi</h2>
             <Row>
             <Col>
-            <img src={tomi} alt="tomi"/>
+                <Image src={tomi} alt="tomi" roundedCircle />
             </Col>
             <Col>
             <p>

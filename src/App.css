@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-image: url('./assets/double-bubble.png');
   
@@ -91,7 +95,9 @@ footer p {
   margin-bottom: 30px;
   font-size: 40px;
 }
-
+.rounded-circle {
+  border-radius: 50%!important;
+  }
 .story{
   background-color: whitesmoke;
   position: static;
@@ -101,14 +107,24 @@ footer p {
   font-size: 20px;
 }
 .stories img {
-  max-width: 100%;
-  max-height: 100%;
+  shape-rendering: roundedCircle;
+  max-width: 360px;
+  max-height: 360px;
   display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 .meme img {
   outline: 2px solid black;
   width: 351px;
   height: 351px;
+  transition: all 0.2s;
+  
+}
+
+.project-card:hover {
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
 /* Position and sizing of burger button */
