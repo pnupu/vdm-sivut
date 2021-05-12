@@ -87,7 +87,25 @@ footer p {
   font-size: 20px;
 }
 
-img {
+.stories h2 {
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+
+.story{
+  background-color: whitesmoke;
+  position: static;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+  font-size: 20px;
+}
+.stories img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+.meme img {
   outline: 2px solid black;
   width: 351px;
   height: 351px;
