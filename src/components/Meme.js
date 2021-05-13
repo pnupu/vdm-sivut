@@ -39,10 +39,17 @@ const MemeModal = (props) => {
 
 const Meme = (meme) => {
     const [modalShow, setModalShow] = useState(false)
-
+    console.log(meme.meme)
     return (
-        <div className="meme">
-            <img src={meme.meme.thumbnail.default} alt="Koko kansan Paavo" onClick={() => setModalShow(true)}/>
+        <div className="meme-card" style={{ backgroundImage: 'url(' + meme.meme.thumbnail.default + ')'}}>
+            <div>
+              <div>
+                <a>Read more</a>
+              </div>
+            </div>
+          {//<img src={meme.meme.thumbnail.default} alt="Koko kansan Paavo" onClick={() => setModalShow(true)}/>
+          }
+          
             <MemeModal
         show={modalShow}
         info={meme.meme}

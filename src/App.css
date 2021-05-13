@@ -74,8 +74,10 @@ footer p {
   padding: 0;
 }
 .col {
-  padding-bottom: 60px;
   align-items: center;
+  max-width: 351px;
+  max-height: 351px;
+  margin: 50px;
 }
 
 .Frontpage img:hover{
@@ -97,7 +99,7 @@ footer p {
 }
 .rounded-circle {
   border-radius: 50%!important;
-  }
+}
 .story{
   background-color: whitesmoke;
   position: static;
@@ -122,8 +124,71 @@ footer p {
   
 }
 
-.project-card:hover {
+.meme-card:hover {
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.meme-card {
+  width: 351px;
+  height: 351px;
+  display: flex;
+  max-width: calc(100vw - 40px);
+  max-height: calc(100vw - 40px);
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-position: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+  margin: 10px;
+}
+
+.meme-card > div > div {
+  height: 50px;
+  width: 351px;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.2s;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.meme-card > div > div a {
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+
+.memne-card > div {
+  min-height: 22px;
+  padding: 10px 10px 35px 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.meme-card:hover > div > div {
+  height: 351px;
+  max-height: calc(100vw - 40px);
+}
+
+.meme-card > div > a {
+  font-size: 14px;
+  position: absolute;
+  bottom: 10px;
+}
+
+.meme-card:hover {
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+
+  background-position: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
   cursor: pointer;
 }
 
