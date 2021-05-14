@@ -42,7 +42,6 @@ const App = () => {
 
   <Burger/>
       <Header/>
-   <div className="container">
       <Switch>
         <Route path="/Stories">
          <Stories/>
@@ -60,7 +59,6 @@ const App = () => {
           <Frontpage />
         </Route>
       </Switch>
-   </div>
       <footer className="footer">
         <p>{footer}</p>
       </footer>
