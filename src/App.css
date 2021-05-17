@@ -1,10 +1,24 @@
 html {
   scroll-behavior: smooth;
+  font-family: "Khula";
 }
 
 body {
-  background-image: url('./assets/double-bubble.png');
+  background-image: white;
   
+}
+
+
+
+.Articles h2 {
+  color: #55AB12;
+  text-transform: uppercase;
+}
+
+
+.Articles a {
+  color: #55AB12;
+  text-transform: uppercase;
 }
 
 .Frontpage{
@@ -84,12 +98,22 @@ footer p {
   cursor: pointer;
 }
 
+.button {
+  background-color: #55AB12;
+  border-color: #55AB12;
+}
+
+.button:hover {
+  background-color: #407915;
+  border-color: #407915;
+}
+
 .article{
   background-color: whitesmoke;
   position: static;
   margin-top: 30px;
-  margin-bottom: 30px;
-  padding: 20px;
+  margin-bottom: 70px;
+  padding: 50px;
   font-size: 20px;
 }
 

@@ -29,11 +29,11 @@ const App = () => {
   const Burger = () => {
     return (
       <Menu>
-        <a id="Frontpage" className="menu-item" href="/">Etusivu</a>
-        <a id="Articles" className="menu-item" href="/Articles">Artikkelit</a>
-        <a id="Stories" className="menu-item" href="/Stories">Tarinat</a>
-        <a id="Memeform" className="menu-item" href="/Memeform">Osallistu</a>
-        <a id="About" className="menu-item" href="/About">About</a>
+        <a id="Frontpage" className="menu-item" href="/">ETUSIVU</a>
+        <a id="Articles" className="menu-item" href="/Articles">ARTIKKELIT</a>
+        <a id="Stories" className="menu-item" href="/Stories">TARINAT</a>
+        <a id="Memeform" className="menu-item" href="/Memeform">OSALLISTU</a>
+        <a id="About" className="menu-item" href="/About">ABOUT</a>
       </Menu>
     )
   }

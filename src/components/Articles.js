@@ -8,6 +8,7 @@ const Articles = (props) => {
             <div className="article" id="1">
             <h2>Rokote: miksi, miten ja milloin?</h2>
             <br />
+            <br />
             <p>
             Rokotteen ottaminen on vapaaehtoista. Näin toimimalla on kuitenkin mahdollista suojella niin itseään kuin ympäröiviä ihmisiä COVID-19-taudilta.
             <br />
@@ -34,6 +35,7 @@ const Articles = (props) => {
             <div className="article" id="2">
             <h2>Rokotteen toiminta</h2>
             <p>
+            <br />
             <br />
             Rokotteita on tarjolla kahta eri tyyppiä: mRNA- ja adenovirusvektorirokotteita.
             <br />
@@ -75,6 +77,7 @@ const Articles = (props) => {
             <h2>Rokotteiden teho</h2>
             <p>
             <br />
+            <br />
             Rokotus saa välittömästi aikaan elimistön puolustusjärjestelmän aktivoitumisen. Kaikkia Suomessa tällä hetkellä käytettäviä rokotteita annetaan kaksi annosta. Toinen annos nostaa suojan 80-95 prosenttiin. Teho riippuu rokotetun iästä ja perussairauksista, sekä kiertävien virusten laadusta.
             <br />
             <br />
@@ -93,6 +96,7 @@ const Articles = (props) => {
             <div className="article" id="4">
             <h2>Rokotteiden kehitys</h2>
             <p>
+            <br />
             <br />
             Suomessa jaettavat koronarokotteet ovat käyneet läpi kaikki lääkeviranomaisten vaatimat tutkimusvaiheet. Niiden teho, laatu ja turvallisuus ovat täyttäneet Euroopan lääkeviraston kriteerit. 
             <br />
@@ -115,6 +119,7 @@ const Articles = (props) => {
             <h2>Turvallisuus ja haittavaikutukset</h2>
             <p>
             <br />  
+            <br />  
             Rokotuksen jälkeen rokotuksen pistokohdassa voi ilmetä parin vuorokauden sisällä paikallisia oireita kuten kipua, punoitusta kuumotusta ja turvotusta. Tavallisia ovat myös yleisoireet kuten kuume, lihassärky, päänsärky, väsymys, huonovointisuus ja vilunväristykset. Oireet menevät ohi muutamien tuntien tai korkeintaan vuorokausien kuluessa. Ne kertovat elimistön puolustusjärjestelmän aktivoitumisesta, eli rokotteen toiminnasta.
             <br />
             <br />
@@ -133,6 +138,7 @@ const Articles = (props) => {
             <div className="article" id="6">
             <h2>Koronatodistus</h2>
             <p>
+            <br />
             <br />
             Suomessa valmistellaan Omakanta-palvelusta saatavaa koronatodistusta. Se koostuisi todistuksista koronarokotteesta, negatiivisesta koronatestituloksesta sekä sairastetusta koronasta. EU:n yhteinen todistus on tarkoitus ottaa käyttöön heinäkuussa. Kansallinen todistus rokotteista taas on määrä ottaa käyttöön toukokuun lopulla.
             <br />
