@@ -14,7 +14,9 @@ body {
   color: #55AB12;
   text-transform: uppercase;
 }
-
+.about h2 {
+  color: #55AB12;
+}
 
 .Articles a {
   color: #55AB12;
@@ -33,12 +35,25 @@ body {
   padding-top: 30vh;
   text-align: center;
   min-height: 80vh;
+  padding-left: 50px;
+  padding-right: 50px;
+
+}
+
+.about > .container {
+  padding: 50px;
+  background-color: whitesmoke;
+
 }
 
 .stories{
   padding-top: 30vh;
   text-align: center;
   min-height: 80vh;
+}
+
+.story h2 {
+  color: #55AB12;
 }
 
 .Articles{
@@ -62,8 +77,12 @@ body {
 .background-text{
   text-align: center;
   position: relative;
-  padding-bottom: 30vh;
+  padding-bottom: 5vh;
   top: 30vh;
+}
+.background-text h3 {
+  padding: 20px;
+  background-color: whitesmoke;
 }
 
 .memeform-text {
@@ -71,11 +90,12 @@ body {
 }
 
 .memeform {
-  margin-bottom: 30px;
-}
+  position: relative;
+  padding-top: 30vh;
+  align-items: center;}
 .memeform-title {
-  padding: 30px;
 }
+
 
 footer {
   width: 100%;
@@ -97,11 +117,18 @@ footer p {
   width: 300px;
   padding: 0;
 }
-.col {
+
+.Frontpage > .row > .col {
   align-items: center;
   max-width: 351px;
   max-height: 351px;
   margin: 40px;
+}
+
+.story > .row > .col {
+  align-items: center;
+  margin: 40px;
+
 }
 
 .Frontpage img:hover{
@@ -141,6 +168,7 @@ footer p {
   margin-bottom: 30px;
   padding: 20px;
   font-size: 20px;
+  height: max-content;
 }
 .stories img {
   shape-rendering: roundedCircle;
@@ -165,8 +193,9 @@ footer p {
 
 .meme-card {
   width: 351px;
-  height: 351px;
+  height: 381px;
   display: flex;
+  background-repeat: no-repeat;
   max-width: calc(100vw - 40px);
   max-height: calc(100vw - 40px);
   flex-direction: column;
@@ -175,6 +204,11 @@ footer p {
   background-size: contain;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
   transition: all 0.2s;
+}
+
+.meme-card > div > div p {
+  font-weight: 100px;
+  padding: 30px;
 }
 
 .meme-card > div > div {
@@ -190,8 +224,9 @@ footer p {
 .meme-card > div > div a {
   font-size: 14px;
   position: absolute;
-  bottom: 5px;
+  bottom: -20px;
   right: 130px;
+  color: #55AB12;
 }
 
 .meme-card > div {
@@ -210,7 +245,7 @@ footer p {
 }
 
 .meme-card:hover > div > div {
-  height: 351px;
+  height: 381px;
   max-height: calc(100vw - 40px);
 }
 
@@ -245,7 +280,7 @@ footer p {
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-  background: #a90000;
+  background: #55AB12;
 }
 
 /* Position and sizing of clickable cross button */

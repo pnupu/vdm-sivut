@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {Form, Button} from 'react-bootstrap'
+import {Form, Button, Container} from 'react-bootstrap'
 
 
 const Memeform = (props) => {
@@ -17,13 +17,19 @@ const Memeform = (props) => {
 
     return (
         <div className="memeform">
+            <Container>
+
             <div className="memeform-text">
             <h4 className="memeform-title">
-                Osallistu kilpailuun lähettämällä paras korona aiheinen meemi. Voit voittaa korona rokotteen!
+            Osallistu kilpailuun omalla koronarokoteaiheisella meemilläsi, voit voittaa 500€!
             </h4>
+            <br/>
             <p>
-                Lähettämällä meemin joka on hauska ja sillä on vahvistettavat lähteet. Julkaisemme parhaat meemit Instagramissa sekä nettisivuillamme. 
+            Alla olevalla lomakkeella voit lähettää meemisi kilpailuun. Meemin tulee käsitellä koronarokotetta ja sisältää faktatietoa.
+            Lähteinä voit esimerkiksi hyödyntää sivustomme Artikkelit-osiota tai THL:n sivustoja. Muistathan liittää nämä lähteet myös osallistumislomakkeeseen,
+            jotta osallistumisesi rekisteröityy varmasti kilpailuun. Voittaja valitaan 6.6. livelähetyksessä yllätysvieraan toimesta. Onnea kilpailuun!
             </p>
+            <br/>
         </div>
         <Form onSubmit={(e) => OnClick(e)}>
             <Form.Group controlId="exampleForm.ControlInput1">
@@ -31,7 +37,7 @@ const Memeform = (props) => {
                 <Form.Control type="email" placeholder="teemu.teekkari@aalto.fi" onChange={e => setEmail(e.target.value)}/>
             </Form.Group>
             <Form.Group controlId="exampleForm.ControlTextarea1">
-                <Form.Label>Meemin kuva teksti sekä lähteet:</Form.Label>
+                <Form.Label>Meemin lähteet: </Form.Label>
                 <Form.Control as="textarea" rows={5}  onChange={e => setText(e.target.value)}/>
             </Form.Group>
             <Form.Group>
@@ -41,6 +47,7 @@ const Memeform = (props) => {
                 Lähetä
             </Button>
         </Form>
+            </Container>
         </div>
     )
 }

@@ -44,7 +44,13 @@ const Meme = (meme) => {
         <div className="meme-card" style={{ backgroundImage: 'url(' + meme.meme.thumbnail.default + ')'}}>
             <div>
               <div>
-                <a href="/">Read more</a>
+                <br/>
+                <p>
+                Paavo Matti Väyrynen on suomalainen poliitikko. 
+                Hän on toiminut kansanedustajana viidellä eri vuosikymmenellä ja on ollut useita kertoja ministerinä. Väyrynen on Suomen Keskustan jäsen.
+                Aiemmin hän on edustanut myös Kansalaispuoluetta sekä Seitsemän tähden liikettä.
+                </p>
+                <a href="/">LUE LISÄÄ</a>
               </div>
             </div>
           {//<img src={meme.meme.thumbnail.default} alt="Koko kansan Paavo" onClick={() => setModalShow(true)}/>
