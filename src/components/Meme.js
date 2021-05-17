@@ -44,7 +44,7 @@ const Meme = (meme) => {
         <div className="meme-card" style={{ backgroundImage: 'url(' + meme.meme.thumbnail.default + ')'}}>
             <div>
               <div>
-                <a>Read more</a>
+                <a href="/">Read more</a>
               </div>
             </div>
           {//<img src={meme.meme.thumbnail.default} alt="Koko kansan Paavo" onClick={() => setModalShow(true)}/>
