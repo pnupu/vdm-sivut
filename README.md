@@ -7,7 +7,7 @@ Installaa käynnistä sivut komennolla
 ### `npm start`
 
 Bäkkäri löytyy sivulta:
-https://github.com/pnupu/vdmback
+https://github.com/pnupu/vdmbakkari.git
 
 Lataa siihenkin node moduulit 
 
