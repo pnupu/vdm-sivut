@@ -8,6 +8,7 @@ import './App.css'
 import { slide as Menu } from 'react-burger-menu'
 import Memeform from './components/Memeform'
 import {Button} from 'react-bootstrap'
+import memeService from './services/memeService'
 
 const App = () => {
   const footer  = `Ryhmä 12 @${new Date().getFullYear()}`
@@ -15,9 +16,9 @@ const App = () => {
   const Header = () => {
     return (
         <div className="background-text">
-          <h1>Piikitä!</h1>
+          <h1>KOHTI NORMAALIA</h1>
           <h3>
-            Tässä on hienoa tekstiä kampanjasta...
+            Ota rokote niin kohta nauramme taas yhdessä.
           </h3>
           <Button href="/Memeform" className="button">
                 Osallistu kilpailuun!
@@ -40,7 +41,7 @@ const App = () => {
   return (
   <div className="page">
 
-  <Burger/>
+      <Burger/>
       <Header/>
       <Switch>
         <Route path="/Stories">

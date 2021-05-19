@@ -43,7 +43,7 @@ const Memeform = (props) => {
             <Form.Group>
                 <Form.File id="exampleFormControlFile1" label="Meemi:" />
             </Form.Group>
-            <Button type="submit" className="mb-2">
+            <Button type="submit" className="submit-button">
                 Lähetä
             </Button>
         </Form>
