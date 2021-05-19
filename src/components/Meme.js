@@ -50,27 +50,41 @@ Tämäm funktio on luomeemin sille annetuista propseista ja huoheltii likejen k�
 const Meme = (props) => {
   //Jäänne aikaisemmasta versiosta
   const [modalShow, setModalShow] = useState(false)
-  //Yhdistetään
+  /*
+  Yhdistetään tietokannan meemit ja nettisivun meemit
+  Tämä oli mielestäni fiksuintapa jotta kuvia ei tarvitse lähettää palvelimelta.
+  Näin säästyy myös palvelimen käytettävää laaja kaistaa.
+  */
   const bMeme = props.backMemes.find( meme => meme.num === props.meme.id)
+  // Estetään errorit jotka tulevat jos palvelimeen ei saada yhteyttä
   let likes = 0
   if(bMeme !== undefined) {
+    // Kun palvelimelta on saatu liket ne päivitetään kuviin
     likes = bMeme.likes
   }
+  /*
+  Tykkäyksen lisäys funktio, funktio ottaa meemin arvona ja lähettää palvelimelle
+  tiedon päivitetystä meemistä, täsä ratkaisussa on ongelmana se että tietokanta ei ole sarjallinen, mutta
+  näin pinenellä nettisivulla se ei ole ongelma.
+  */
   const addlike = async (meme) => {
-
     try {
+      //Luodaan objekti jolla on yksi tykkäys ennemmän
       const like = {
         ...meme, likes: (meme.likes + 1)
       }
-      console.log(like)
+      //Lähetetään tämä objekti bäkkärille
       await memeService.update(like)
+      //Päivitetään ruudulla näkyvät liket, näin tykkäys näkyy heti vaikka se ei ole vielä päivittynyt palvelimelle.
       likes = likes + 1
-
     } catch(error) {
+      //Error handlaus
       console.log('something went wrong with adding a like')
     }
+    //ladataan liket palvelimelta
     props.getMemes()
   }
+  //Luodaan meemikortti
   return (
     <div className="meme-card" style={{ backgroundImage: 'url(' + props.meme.thumbnail.default + ')' }}>
       <div>
@@ -88,7 +102,9 @@ const Meme = (props) => {
       }
       {//<img src={props.meme.thumbnail.default} alt={props.meme.smalltext} onClick={() => setModalShow(true)}/>
       }
-
+      {
+        //Jäänne aikaisemmasta versiosta
+      }
       <MemeModal
         show={modalShow}
         info={props.meme}

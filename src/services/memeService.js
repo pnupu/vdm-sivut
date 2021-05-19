@@ -17,4 +17,9 @@ const update = async updatedObject => {
   return response.data
 }
 
-export default { getAll, update }
+const put = async updatedObject => {
+  const response = await axios.put('/api/candidates', updatedObject)
+  return response.data
+}
+
+export default { getAll, update, put }

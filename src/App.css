@@ -8,7 +8,9 @@ body {
   
 }
 
-
+/*
+Hyvin yksinkertaista css:sää
+*/
 
 .Articles h2 {
   color: #55AB12;
@@ -98,7 +100,7 @@ body {
 
 .memeform {
   position: relative;
-  margin-top: 30vh;
+  margin-top: 50vh;
   align-items: center;
 }
 
@@ -154,7 +156,27 @@ footer p {
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
 
 }
-
+@media only screen and (max-width: 600px) {
+  .likes {
+    font-size: 14px;
+    position: absolute;
+    padding-top: 0 !important;
+    padding-left: 0 !important;
+    padding-bottom: 0 !important;
+    padding-right: 0 !important;
+    margin: 0;
+    bottom: 5px !important;
+    right: 190px;
+    color: #55AB12;
+  }
+  .meme-card > div > div a {
+    font-size: 14px;
+    position: absolute;
+    bottom: 5px !important;
+    right: 100px;
+    color: #55AB12;
+  }
+}
 .submit-button {
   background-color: #55AB12;
   border-color: #55AB12;
@@ -237,7 +259,13 @@ footer p {
   font-weight: 500;
   padding: 30px;
 }
-
+.meme-card > div > div a {
+  font-size: 14px;
+  position: absolute;
+  bottom: -20px;
+  right: 100px;
+  color: #55AB12;
+}
 .meme-card > div > div {
 
   height: 30px;
@@ -250,13 +278,7 @@ footer p {
   background: rgba(255, 255, 255, 0.95);
 }
 
-.meme-card > div > div a {
-  font-size: 14px;
-  position: absolute;
-  bottom: -20px;
-  right: 100px;
-  color: #55AB12;
-}
+
 
 .likes {
   font-size: 14px;

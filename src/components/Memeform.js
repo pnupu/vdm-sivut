@@ -1,17 +1,29 @@
 import React, { useState } from 'react'
 import { Form, Button, Container } from 'react-bootstrap'
+import candidateServices from '../services/candidateService'
 
 
+/*
+Tällä sivulla on meemiformi jolla voi lähettää meemejä kisaan.
+*/
 const Memeform = () => {
   const [email, setEmail] = useState('')
   const [text, setText] = useState('')
+  const [link, setLink] = useState('')
 
+  //Onclick handleri joka lähetää meemiehdokaan tietokantaan
   const OnClick = (event) => {
     event.preventDefault()
-    console.log(email)
-    console.log(text)
+
+    const object = {
+      email: email,
+      text: text,
+      link: link
+    }
+    candidateServices.put(object)
     setEmail('')
     setText('')
+    setLink('')
   }
 
 
@@ -40,8 +52,9 @@ const Memeform = () => {
             <Form.Label>Meemin lähteet: </Form.Label>
             <Form.Control as="textarea" rows={5}  onChange={e => setText(e.target.value)}/>
           </Form.Group>
-          <Form.Group>
-            <Form.File id="exampleFormControlFile1" label="Meemi:" />
+          <Form.Group controlId="exampleForm.ControlTextarea1">
+            <Form.Label>Linkki meemiin: </Form.Label>
+            <Form.Control as="textarea" onChange={e => setLink(e.target.value)}/>
           </Form.Group>
           <Button type="submit" className="submit-button">
                 Lähetä

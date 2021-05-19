@@ -3,7 +3,9 @@ import matti from '../assets/matti.jpg'
 import liisi from '../assets/liisi.jpg'
 import tomi from '../assets/tomi.jpg'
 import { Container, Row, Col, Image } from 'react-bootstrap'
-
+/*
+Tällä sivulla luodaan sivulla olevat tarinat
+*/
 const Stories = () => {
 
   return (

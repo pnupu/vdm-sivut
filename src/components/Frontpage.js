@@ -14,7 +14,6 @@ const Frontpage = (props) => {
       <Row >
         {memes.map(meme => <Col key={meme.id}> <Meme key={meme.id} meme={meme} backMemes={props.memes} getMemes={props.getMemes}/></Col>)}
       </Row>
-
     </div>
   )
 }
